@@ -1,0 +1,53 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .contact-us-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    label {
+      margin-bottom: 20px;
+    }
+  }
+}
+.contact-us-form input,
+button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-us-form button {
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 15px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #a48032;
+    color: #000;
+  }
+}
+// Media Etiketleri
+@media (min-width: 768px) {
+  .contact-us {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .contact-us img,
+  .contact-us-form {
+    width: 48%;
+  }
+  .contact-us img {
+    margin-right: 10px;
+  }
+}
